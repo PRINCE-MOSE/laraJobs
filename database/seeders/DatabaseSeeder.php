@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+// use App\Models\Listings;
 use App\Models\Listings;
 use Illuminate\Database\Seeder;
 
@@ -16,6 +17,6 @@ class DatabaseSeeder extends Seeder
     {
         \App\Models\User::factory(5)->create();
 
-        \App\Models\Listings::factory(5)->create();
+        Listings::factory(5)->create();
     }
 }
